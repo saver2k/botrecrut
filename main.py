@@ -25,7 +25,7 @@ import atexit
 atexit.register(save_used_words)
 
 # Инициализация клиента OpenAI
-clientAI = OpenAI(api_key="3PBVFay6iJzUdBxKwQ05uVYYTD8vtEZ4", base_url="https://api.deepinfra.com/v1/openai")
+clientAI = OpenAI(api_key="", base_url="https://api.deepinfra.com/v1/openai")
 
 def generate_response_from_api(prompt: str):
     response = clientAI.chat.completions.create(
@@ -40,8 +40,8 @@ def generate_response_from_api(prompt: str):
 
 # Конфигурация Telegram
 API_ID = '18722935'
-API_HASH = '09f2b2156abdc9276eb52e173036311a'
-BOT_TOKEN = '7163780616:AAHOvYDuloy3x4JY9V8d5U0RQMlvSyGXsWU'
+API_HASH = ''
+BOT_TOKEN = ''
 NAMES_IDS = [
     '@mari_vakansii', '@dnative_job', '@algoritm_schools', '@normrabota', '@polyaluzjob',
     '@digital_rabota', '@workindesign', '@designer_ru', '@workasap',
